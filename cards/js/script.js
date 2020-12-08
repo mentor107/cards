@@ -32,5 +32,11 @@ if (confirm("Высшего ранга?")) {
         }
     }
 } else {
-    rang = prompt('Введите цифру');
+    rang = prompt('Введите цифру')
+    
+    for (let i = 0; rang!=+rang || rang < 2 || rang > 10; i++) {
+        rang = prompt('Введите цифру')
+
+    }
+
 }
