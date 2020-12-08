@@ -3,6 +3,7 @@ alert('Загадайте карту');
 let rang = '';
 let color = '';
 
+
 if (confirm("Красный цвет?")) {
     if (confirm("Черва?")) {
         color = 'Черва';
@@ -32,5 +33,15 @@ if (confirm("Высшего ранга?")) {
         }
     }
 } else {
-    rang = prompt('Введите цифру');
+    let x = 0;
+    while (x == 0) {
+        rang = prompt('Введите цифру');
+        if (isNaN(rang) || rang < 6 || rang > 10) {
+            x = 0; 
+        }
+        else{
+            x = 1;
+            break;
+        }
+    }
 }
