@@ -32,8 +32,5 @@ if (confirm("Высшего ранга?")) {
         }
     }
 } else {
-    let number = prompt('Введите цифру');
-    if (Number(number) > 0 && Number(number) <= 10) {
-        rang = number;
-    }
+    rang = prompt('Введите цифру');
 }
