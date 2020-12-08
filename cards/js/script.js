@@ -33,14 +33,13 @@ if (confirm("Высшего ранга?")) {
         }
     }
 } else {
-    let x = 0;
-    while (x == 0) {
+
+    for (let i = 0; ; i++) {
         rang = prompt('Введите цифру');
         if (isNaN(rang) || rang < 6 || rang > 10) {
-            x = 0; 
-        }
-        else{
-            x = 1;
+            rang = prompt('Введите цифру');
+        } else {
+
             break;
         }
     }
