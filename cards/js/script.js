@@ -32,5 +32,12 @@ if (confirm("Высшего ранга?")) {
         }
     }
 } else {
-    rang = prompt('Введите цифру');
+    for (let i = 0; ; i++) {
+        rang = prompt('Введите цифру');
+        if (isNaN(rang) || rang < 6 || rang > 10) {
+            rang = prompt('Введите цифру');
+        } else {
+            break;
+        }
+    }
 }
